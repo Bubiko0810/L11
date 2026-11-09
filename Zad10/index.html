@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Igor Drozd" />
+    <title>Definiowanie kotwicy w konkretnym miejscu strony</title>
+</head>
+
+<body>
+
+    <h1>Jak definiujemy kotwicę na stronie</h1>
+
+    <section id="a_top">
+
+        <h2>Tutaj zdefiniowaliśmy kotwicę o nazwie <i>a_top</i></h2>
+        <p>
+            <a href="#a_bottom">To jest link do kotwicy dolnej</a>
+            <figure>
+                <img src="Spek-Anchor.jpg" alt="Spek-Anchor">
+                <figcaption>Rysunek 1. Spek-Anchor</figcaption>
+            </figure>
+        </p>
+    </section>
+
+    <section>
+        <br/><br/><br/>
+        <p>
+            Zdefiniowanie kotwicy w konkretnym miejscu dokumentu HTML<br/>
+            i wskazanie tej kotwicy w linku do tego dokumentu,<br/>
+            spowoduje po jego otwarciu, przewinięcie <br/>
+            tak aby wiersz zawierający kotwicę znajdował się jak najbliżej górnej krawędzi okna przeglądarki.<br/>
+            Aby było co przewijać dodamy dwa rysunki kotwic oraz linie puste,<br/>
+            a następnie, zdefiniujemy dwie kotwice.
+            <br/><br/><br/>
+        </p>
+    </section>
+
+    <section>
+        <a name="a_bottom"></a>
+        <h2>Tutaj została zdefiniowana kotwica o nazwie <i>a_bottom</i></h2>
+        <p>
+            <a href="#a_top">To jest link do kotwicy górnej</a>
+
+            <figure>
+                <img src="kotwica.jpg" alt="Kotwica Akademia Kołobrzeg">
+                <figcaption>Rysunek 2. Kotwica Akademia Kołobrzeg</figcaption>
+            </figure>
+        </p>
+    </section>
+
+</body>
+</html>
